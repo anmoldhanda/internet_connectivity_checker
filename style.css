@@ -1,0 +1,113 @@
+/* ====================================================== google fonts ====================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap");
+
+/* ====================================================== root variables ====================================================== */
+:root {
+  --red-color: #ff6685;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass Mono", monospace;
+}
+
+body {
+  background: #e3f2fd;
+}
+
+.internet_connectivity_message_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: capitalize;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  gap: 0.5rem;
+  border-top: 3px solid var(--red-color);
+}
+
+.internet_connectivity_message_title {
+  font-weight: 500;
+}
+
+.internet_connectivity_message_description {
+  font-weight: bold;
+}
+
+.internet_connectivity_popupbox {
+  background: white;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-top: 3px solid var(--red-color);
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  visibility: hidden;
+  transform: translateX(-50%);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.internet_connectivity_popupbox.show {
+    visibility: visible;
+    top: 0;
+}
+
+.internet_connection_iconbox i {
+  background: var(--red-color);
+  padding: 5px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.internet_connection_iconbox i.online {
+    background: #8ac926;
+}
+
+.internet_connection_detailsbox {
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.internet_connection_title {
+  font-weight: 500;
+}
+
+.internet_connection_description {
+  font-weight: normal;
+}
+
+.reconnect_internet_btn {
+  background-color: cornflowerblue;
+  color: #fff;
+  padding: 5px 8px;
+  border: 1px solid transparent;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 13px;
+  border-radius: 2px;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.reconnect_internet_btn:hover {
+  background-color: #fff;
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  font-weight: bold;
+}
