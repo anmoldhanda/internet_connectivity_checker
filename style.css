@@ -14,7 +14,7 @@
 }
 
 body {
-  background: #e3f2fd;
+  background: #dddddd;
 }
 
 .internet_connectivity_message_container {
@@ -26,6 +26,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  background-color: #fff;
   transform: translate(-50%, -50%);
   padding: 1.5rem;
   border-radius: 10px;
@@ -59,8 +60,8 @@ body {
 }
 
 .internet_connectivity_popupbox.show {
-    visibility: visible;
-    top: 0;
+  visibility: visible;
+  top: 0;
 }
 
 .internet_connection_iconbox i {
@@ -73,7 +74,7 @@ body {
 }
 
 .internet_connection_iconbox i.online {
-    background: #8ac926;
+  background: #8ac926;
 }
 
 .internet_connection_detailsbox {
